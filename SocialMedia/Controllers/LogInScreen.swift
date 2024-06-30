@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationItem.hidesBackButton = true
-        
-        logInButton.layer.cornerRadius = logInButton.frame.height / 4
+       logInButton.layer.cornerRadius = logInButton.frame.height / 4
     }
 
 
