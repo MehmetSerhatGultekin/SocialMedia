@@ -11,7 +11,7 @@ class DiscoverScreen: UIViewController {
     
     @IBOutlet weak var imagesCV: UICollectionView!
     
-    var image = [String]()
+    var images = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,11 @@ class DiscoverScreen: UIViewController {
         
         imagesCV.collectionViewLayout = design
         
-        image = ["Ronaldo"]
+        images = ["Ronaldo", "Messi", "Ana de armas", "Kedi", "Köpek",
+                  "Snow", "Foreman", "Conor", "Bayrak", "Ankara", "GOT",
+                  "King", "Dragon", "Galatasaray", "KDB", "Çilek",
+                  "Ester", "Ronaldinho", "Wolf", "Manzara", "Zed",
+                  "NK", "Zidane", "Faker"]
         
         imagesCV.delegate = self
         imagesCV.dataSource = self
@@ -42,17 +46,13 @@ class DiscoverScreen: UIViewController {
 extension DiscoverScreen: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return image.count * 30
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = imagesCV.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ImagesCVCell
-        if indexPath.row == 0 {
-            cell.discoverImagesIV.image = UIImage(named: "Ronaldo")
-        } else {
-            cell.discoverImagesIV.image = nil
-        }
-        
+        let image = images[indexPath.row]
+        cell.discoverImagesIV.image = UIImage(named: image)
         return cell
     }
     
