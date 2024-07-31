@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CC-ro-hNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886" y="-507"/>
+            <point key="canvasLocation" x="2886" y="-758"/>
         </scene>
         <!--Anasayfa-->
         <scene sceneID="q3R-Fq-055">
@@ -159,6 +159,9 @@
                                 <rect key="frame" x="357.66666666666669" y="59" width="52.333333333333314" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="message" catalog="system"/>
+                                <connections>
+                                    <segue destination="ej0-Un-M6u" kind="show" id="gM2-WH-9oN"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="agY-4E-laT">
                                 <rect key="frame" x="0.0" y="97.333333333333314" width="430" height="751.66666666666674"/>
@@ -220,7 +223,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYq-Ko-Fet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2885.5813953488373" y="441.63090128755368"/>
+            <point key="canvasLocation" x="2886" y="553"/>
+        </scene>
+        <!--Screen-->
+        <scene sceneID="uwp-Su-eEh">
+            <objects>
+                <viewController id="ej0-Un-M6u" customClass="DMScreen" customModule="SocialMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KmB-YA-fCn">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-sc-533">
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PCF-of-2k9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cWK-sc-533" firstAttribute="top" secondItem="PCF-of-2k9" secondAttribute="top" id="1QI-OC-9jh"/>
+                            <constraint firstItem="cWK-sc-533" firstAttribute="leading" secondItem="PCF-of-2k9" secondAttribute="leading" id="8BW-lQ-g2z"/>
+                            <constraint firstItem="PCF-of-2k9" firstAttribute="trailing" secondItem="cWK-sc-533" secondAttribute="trailing" id="Mc1-PZ-VAc"/>
+                            <constraint firstItem="PCF-of-2k9" firstAttribute="bottom" secondItem="cWK-sc-533" secondAttribute="bottom" id="z1U-bd-ERX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nv0-Mn-fbg"/>
+                    <connections>
+                        <outlet property="messagesTV" destination="cWK-sc-533" id="Vru-9h-pi9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMx-6x-58u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3851" y="552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7J7-y5-39R">

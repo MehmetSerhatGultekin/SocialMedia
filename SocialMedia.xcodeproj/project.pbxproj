@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1593CCB2C4FE14E00220E81 /* DirectMessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1593CC92C4FE14E00220E81 /* DirectMessagesCell.swift */; };
+		D1593CCC2C4FE14E00220E81 /* DirectMessagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1593CCA2C4FE14E00220E81 /* DirectMessagesCell.xib */; };
 		D17903172C315A2200B24594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17903162C315A2200B24594 /* AppDelegate.swift */; };
 		D17903192C315A2200B24594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17903182C315A2200B24594 /* SceneDelegate.swift */; };
 		D179031B2C315A2200B24594 /* LogInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D179031A2C315A2200B24594 /* LogInScreen.swift */; };
@@ -17,9 +19,13 @@
 		D17903322C316EBF00B24594 /* ImagesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17903312C316EBF00B24594 /* ImagesCVCell.swift */; };
 		D17903342C356B0200B24594 /* HomePageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17903332C356B0200B24594 /* HomePageScreen.swift */; };
 		D1A38C9C2C452E650025882C /* PostsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38C9B2C452E650025882C /* PostsCVCell.swift */; };
+		D1A38C9E2C45354C0025882C /* DMScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38C9D2C45354C0025882C /* DMScreen.swift */; };
+		D1A38CA42C468E9B0025882C /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38CA32C468E9B0025882C /* Messages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1593CC92C4FE14E00220E81 /* DirectMessagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesCell.swift; sourceTree = "<group>"; };
+		D1593CCA2C4FE14E00220E81 /* DirectMessagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectMessagesCell.xib; sourceTree = "<group>"; };
 		D17903132C315A2200B24594 /* SocialMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17903162C315A2200B24594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D17903182C315A2200B24594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		D17903312C316EBF00B24594 /* ImagesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCVCell.swift; sourceTree = "<group>"; };
 		D17903332C356B0200B24594 /* HomePageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageScreen.swift; sourceTree = "<group>"; };
 		D1A38C9B2C452E650025882C /* PostsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCVCell.swift; sourceTree = "<group>"; };
+		D1A38C9D2C45354C0025882C /* DMScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMScreen.swift; sourceTree = "<group>"; };
+		D1A38CA32C468E9B0025882C /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			children = (
 				D17903312C316EBF00B24594 /* ImagesCVCell.swift */,
 				D1A38C9B2C452E650025882C /* PostsCVCell.swift */,
+				D1A38CA32C468E9B0025882C /* Messages.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				D179031C2C315A2200B24594 /* Main.storyboard */,
+				D1593CC92C4FE14E00220E81 /* DirectMessagesCell.swift */,
+				D1593CCA2C4FE14E00220E81 /* DirectMessagesCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +110,7 @@
 				D179031A2C315A2200B24594 /* LogInScreen.swift */,
 				D179032C2C3169BC00B24594 /* DiscoverScreen.swift */,
 				D17903332C356B0200B24594 /* HomePageScreen.swift */,
+				D1A38C9D2C45354C0025882C /* DMScreen.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +175,7 @@
 			files = (
 				D17903232C315A2300B24594 /* LaunchScreen.storyboard in Resources */,
 				D17903202C315A2300B24594 /* Assets.xcassets in Resources */,
+				D1593CCC2C4FE14E00220E81 /* DirectMessagesCell.xib in Resources */,
 				D179031E2C315A2200B24594 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D179031B2C315A2200B24594 /* LogInScreen.swift in Sources */,
+				D1A38CA42C468E9B0025882C /* Messages.swift in Sources */,
 				D1A38C9C2C452E650025882C /* PostsCVCell.swift in Sources */,
+				D1A38C9E2C45354C0025882C /* DMScreen.swift in Sources */,
+				D1593CCB2C4FE14E00220E81 /* DirectMessagesCell.swift in Sources */,
 				D17903342C356B0200B24594 /* HomePageScreen.swift in Sources */,
 				D17903172C315A2200B24594 /* AppDelegate.swift in Sources */,
 				D17903322C316EBF00B24594 /* ImagesCVCell.swift in Sources */,
