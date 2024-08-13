@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CC-ro-hNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886" y="-758"/>
+            <point key="canvasLocation" x="2886" y="-850"/>
         </scene>
         <!--Anasayfa-->
         <scene sceneID="q3R-Fq-055">
@@ -223,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYq-Ko-Fet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886" y="553"/>
+            <point key="canvasLocation" x="1566" y="745"/>
         </scene>
         <!--Screen-->
         <scene sceneID="uwp-Su-eEh">
@@ -254,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMx-6x-58u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3851" y="552"/>
+            <point key="canvasLocation" x="2886" y="745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7J7-y5-39R">
@@ -288,11 +288,41 @@
                     <connections>
                         <segue destination="Ciw-ww-9jO" kind="relationship" relationship="viewControllers" id="s1s-VP-0WC"/>
                         <segue destination="d8d-g1-EWY" kind="relationship" relationship="viewControllers" id="RFG-Qz-T0b"/>
+                        <segue destination="K7V-3o-XEy" kind="relationship" relationship="viewControllers" id="cYI-Yl-VGL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eus-Fc-zLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1565.5813953488373" y="-36.695278969957087"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="jfE-OS-WPI">
+            <objects>
+                <viewController id="K7V-3o-XEy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTJ-Tr-eSO">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dcw-CS-rPn">
+                                <rect key="frame" x="20" y="117" width="112" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-Vn-E1T">
+                                <rect key="frame" x="123" y="151" width="243" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pb4-8r-yDG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="person.crop.circle" catalog="system" largeContentSizeImage="person.crop.circle.fill" selectedImage="person.circle.fill" id="qeD-17-Kxd"/>
+                    <navigationItem key="navigationItem" id="CN8-dc-Mf4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0U-dP-NDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3784.1860465116279" y="-37.33905579399142"/>
         </scene>
     </scenes>
     <resources>
@@ -302,6 +332,10 @@
         <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
         <image name="message" catalog="system" width="128" height="116"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
